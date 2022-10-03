@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    position: relative;
+}
+
+#right-panel {
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    min-width: 500px;
+    min-height: 600px;
+}
+
+.color-overlay {
+    opacity: 0.25;
+    position: absolute;
+}
+
+#center-view {
+    padding: 0;
+    height: 100%;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-content: center;
+    flex-grow: 1;
+    z-index: 1;
+}
+
+
+.card {
+    background-color: rgb(29, 29, 31);
+    border-radius: 10px;
+    height: 100px;
+    position: relative;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6%;
+
+    transition-property: background;
+    transition-duration: 0.35s;
+}
+
+#view-projects {
+    background-color: rgb(29, 29, 31);
+    border-radius: inherit;
+    inset: 1px;
+    position: absolute;
+    font-size: 20pt;
+    color: white;
+
+    transition-property: color;
+    transition-duration: 0.35s;
+}
+
+#view-projects:hover {
+    cursor: pointer;
+    color: rgb(208, 207, 140);
+    transition-duration: 0.35s;
+}
+
+.card:hover::before {
+    opacity: 1;
+    transition-duration: 0.35s;
+}
+
+.card:before {
+    background: linear-gradient(
+        45deg,
+        transparent 5%,
+        rgb(208, 207, 140) 50%,
+        transparent 99%
+    );
+    transition-duration: 0.35s;
+    border-radius: inherit;
+    content: "";
+    inset: 0px;
+    opacity: 0;
+    position: absolute;
+    z-index: 0;
+}
+
+#projects-link {
+    border-radius: inherit;
+}
+
+/*
+  #center-view #name {
+    overflow: hidden; 
+    border-right: .15em solid orange; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 2s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 400px }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+  }
+*/
+
+#name {
+    margin: 0;
+    margin-top: 0.5em;
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+#profession {
+    margin: 0;
+    margin-top: 0.35em;
+    font-size: 1.6em;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+}
