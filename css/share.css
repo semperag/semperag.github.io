@@ -34,6 +34,7 @@ body {
 #center-view {
     padding: 0;
     height: 100%;
+    overflow: auto;
     color: white;
     font-family: sans-serif;
     display: flex;
