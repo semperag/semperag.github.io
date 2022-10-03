@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/share.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script language="JavaScript" type="text/javascript" src="js/index.js"></script>
+        <script language="JavaScript" type="text/javascript" src="js/contact.js"></script>
         
     </head>
     <body>
@@ -50,6 +50,7 @@
 
                         <table id="resume">
                             <tbody>
+                                <form action="https://formsubmit.co/adair.sempe@gmail.com" method="POST">
                                 <tr>
                                     <td class="resume-title">
                                         Contact Me
@@ -62,19 +63,40 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <textarea id="email-textarea" placeholder="Email*"></textarea>
+                                        <textarea id="email-textarea" type="email" name="email" placeholder="Email*"></textarea>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <textarea id="message-textarea" placeholder="Message*"></textarea>
+                                        <textarea id="message-textarea" type="text" name="message" placeholder="Message*"></textarea>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td id="send">
-                                        <button id="send-button">Send</button>
+                                        <button id="send-button" type="submit" onClick="sendMessage()">Send</button>
                                     </td>
                                 </tr>
+                                </form>
+                                <!--
+                                <script src="https://smtpjs.com/v3/smtp.js"></script>
+                                <script>
+                                    function sendEmail() {
+                                        Email.send({
+                                            Host : "smtp.elasticemail.com",
+                                            Username : "adairsemper@gmail.com",
+                                            Password : "214A78468B3C4C0E9F50A96274D4233BBF8D",
+                                            //Port : 587, //2525
+                                            //Password : "knbrsvfbuebxffcu",
+                                            To : 'adair.sempe@gmail.com',
+                                            From : document.getElementById("email-textarea").value,
+                                            Subject : "New Contact Form Enquiry",
+                                            Body : "And this is the body"
+                                        }).then(
+                                        message => alert(message)
+                                        );
+                                    }
+                                </script>
+                            -->
                             </tbody>
                         </table>
                     </div>
