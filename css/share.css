@@ -6,6 +6,22 @@ body {
     color: white;   
 }
 
+#right-panel {
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    position: fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    min-width: 500px;
+    min-height: 600px;
+}
+
 .color-overlay {
     margin: 0;
     height: 100vh;
@@ -15,6 +31,18 @@ body {
     position: fixed;
 }
 
+#center-view {
+    padding: 0;
+    height: 100%;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-content: center;
+    flex-grow: 1;
+    z-index: 1;
+}
 
 .topnav {
     overflow: hidden;
