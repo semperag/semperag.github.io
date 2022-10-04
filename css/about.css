@@ -20,13 +20,12 @@ main {
 }
 
 .card {
-    display: flex; /* establish flex container */
-    flex-direction: row; /* make main-axis vertical */
-    justify-content: center; /* align items vertically, in this case */
-    align-items: center; /* align items horizontally, in this case */
-    height: 500px;
-    width: 300px;
+    text-align: start;
+    height: 100vh;
+    width: 700px;
+    margin-top: 5%;
     font-size: large;
+    font-family: lato;
 }
 
 .card i {
@@ -57,24 +56,12 @@ main {
 */
 
 img {
-    filter: brightness(100%) !important;
+    filter: brightness(90%) !important;
 }
 
-#name {
-    margin: 0;
-    margin-top: 0.5em;
-    padding: 0;
-    display: inline-block;
-    text-align: center;
-    font-size: 3em;
-    font-weight: bold;
-}
-
-#profession {
-    margin: 0;
-    margin-top: 0.35em;
-    font-size: 1.6em;
-    display: inline-block;
-    font-weight: bold;
-    text-align: center;
+#adi-face {
+    max-height: 500px;
+    max-width: 700px;
+    border: 20px solid rgba(113, 113, 113, 0.462);
+    box-sizing: border-box;
 }
