@@ -191,6 +191,7 @@ li {
 
     #topnav-right a{
         border-top: 1px solid white;
+        justify-content: center;
     }
 
     #menu {
@@ -208,10 +209,6 @@ li {
         background-color: black;
         transition: color background-color;
         transition-duration: 0.3s;
-    }
-
-    .topnav-right #menu:hover  {
-        display: block;
     }
 
     .active {
