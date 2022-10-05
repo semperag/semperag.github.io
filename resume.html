@@ -10,9 +10,14 @@
         <link rel="stylesheet" href="css/share.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script language="JavaScript" type="text/javascript" src="js/index.js"></script>
+        <script language="JavaScript" type="text/javascript" src="js/share.js"></script>
         
     </head>
+    <script>
+$.get("https://semperag.github.io/nav.html", function(data){
+            $("#resume-link").addClass("active");
+        });
+    </script>
     <body>
         <div id="root">
             <header>
@@ -23,23 +28,7 @@
                     <div class="color-overlay"></div>
                     
                     <div id="center-view">
-                        <div class="topnav">
-                            <div id="socials">Social:</div>
-                            <a class="fa fa-github social-link" title="Github Link"
-                                href="https://github.com/semperag" target="_blank">
-                            </a>
-                            <a class="fa fa-linkedin-square social-link" title="Linkedln Link"
-                                href="https://www.linkedin.com/in/adair-sempertegui-3880601a3/" target="_blank">
-                            </a>
-                            <a id="contact-email" class="social-link" href="mailto:adair.sempe@gmail.com">&#9993;</a>
-                            <div class="topnav-right">
-                                <a href="index.html">Home</a>
-                                <a href="projects.html">Projects</a>
-                                <a class="active" href="resume.html">Resume</a>
-                                <a href="about.html">About</a>
-                                <a href="contact.html">Contact</a>
-                            </div>
-                          </div>
+                        <div id="nav-placeholder"></div>
                         <!--
                         <div>Projects</div>
                         <applet code=Calculator.class 
