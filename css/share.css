@@ -48,14 +48,18 @@ body {
 .topnav {
     overflow: hidden;
     padding-top: 1%;
-    padding-bottom: 5%;
-    padding-left: 7.5%;
 }
 
 #socials {
+    display: flex;
+    flex-direction: row;
     float: left;
     color: #f2f2f2;
     text-align: center;
+    padding-left: 7.5%;
+}
+
+#social-title {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 18px;
@@ -84,7 +88,7 @@ body {
     border-bottom: 3px solid rgb(208, 207, 140);
 }
 
-.topnav-right {
+#topnav-right {
     float: right;
     padding-right: 7.5%;
 }
@@ -178,12 +182,21 @@ li {
 
 /* On screens that are 600px wide or less, the background color is olive */
 @media screen and (max-width: 850px) {
-    .topnav-right {
-      display: none;
+    #topnav-right {
+        display: none;
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+    }
+
+    #topnav-right a{
+        border-top: 1px solid white;
     }
 
     #menu {
         display: flex;
+        position: absolute;
+        right: 10px;
     }
 
     #menu:hover {
@@ -196,4 +209,14 @@ li {
         transition: color background-color;
         transition-duration: 0.3s;
     }
+
+    .topnav-right #menu:hover  {
+        display: block;
+    }
+
+    .active {
+        display: flex !important;
+    }
   }
+
+  
