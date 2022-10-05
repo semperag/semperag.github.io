@@ -11,13 +11,15 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
         <!--<script src="https://code.jquery.com/jquery-1.10.2.js"></script>-->
-        <script language="JavaScript" type="text/javascript" src="js/share.js"></script>
+        <!--<script language="JavaScript" type="text/javascript" src="js/share.js"></script>-->
     </head>
+    <!--
     <script>
         $.get("https://semperag.github.io/nav.html", function(data){
             $("#home-link").addClass("active");
         });
     </script>
+-->
     <body>
         <div id="preloader"></div>
         
@@ -30,6 +32,28 @@
                     
                     <div id="center-view">
                         <div id="nav-placeholder"></div>
+                        <div class="topnav">
+                            <div id="socials">Social:</div>
+                            <a class="fa fa-github social-link" title="Github Link"
+                                href="https://github.com/semperag" target="_blank">
+                            </a>
+                            <a class="fa fa-linkedin-square social-link" title="Linkedln Link"
+                                href="https://www.linkedin.com/in/adair-sempertegui-3880601a3/" target="_blank">
+                            </a>
+                            <a id="contact-email" class="social-link" href="mailto:adair.sempe@gmail.com">&#9993;</a>
+                            <div class="topnav-right">
+                                <a id="home-link" href="index.html">Home</a>
+                                <a id="projects-link"href="projects.html">Projects</a>
+                                <a id="resume-link" href="resume.html">Resume</a>
+                                <a id="about-link" href="about.html">About</a>
+                                <a id="contact-link" href="contact.html">Contact</a>
+                            </div>
+                            <div id="menu">
+                                <div class="menu-bar"></div>
+                                <div class="menu-bar"></div>
+                                <div class="menu-bar"></div>
+                            </div>
+                        </div>
 
                         <h1 id="name">Adi Sempertegui</h1>
                         <p id="profession">Software Engineer</p>
@@ -51,7 +75,7 @@
 
             window.addEventListener("load", function() {
                 console.log(loader);
-                setTimeout(() => {  loader.style.display = "none"; }, 500);
+                setTimeout(() => {  loader.style.display = "none"; }, 300);
             })
         </script>
     </body>

@@ -3,7 +3,8 @@ body {
     height: 100vh;
     background-repeat:no-repeat;
     background-attachment: fixed;
-    color: white;   
+    color: white;
+    background: #000   
 }
 
 #preloader {
@@ -88,13 +89,6 @@ body {
     padding-right: 7.5%;
 }
 
-#menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    width: 100%;
-}
-
 #social {
     float: left;
     padding-top: 1%;
@@ -158,9 +152,48 @@ li {
     background: rgb(199, 175, 134); 
   }
 
+#menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    height: 48px;
+    width: 45px;
+    padding: 0px 6px 0px 6px !important;
+    margin-right: 10%;
+    transition: color background-color;
+    transition-duration: 0.3s;
+}
+
+.menu-bar {
+    width: 28px;
+    height: 3px;
+    background-color: #f2f2f2;
+    margin: 2.5px 0;
+    transition: color background-color;
+    transition-duration: 0.3s;
+    pointer-events:none;
+}
+
 /* On screens that are 600px wide or less, the background color is olive */
 @media screen and (max-width: 850px) {
     .topnav-right {
       display: none;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu:hover {
+        background-color: rgb(232, 232, 232);
+        cursor: pointer;
+    }
+
+    #menu:hover .menu-bar {
+        background-color: black;
+        transition: color background-color;
+        transition-duration: 0.3s;
     }
   }
