@@ -19,6 +19,9 @@
         });
     </script>
     <body>
+
+        <div id="preloader"></div>
+
         <div id="root">
             <header>
             </header>
@@ -50,5 +53,13 @@
             <footer>
             </footer>
         </div>
+        <script>
+            var loader = document.getElementById("preloader");
+
+            window.addEventListener("load", function() {
+                console.log(loader);
+                setTimeout(() => {  loader.style.display = "none"; }, 500);
+            })
+        </script>
     </body>
 </html>
