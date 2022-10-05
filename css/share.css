@@ -117,17 +117,6 @@ body {
     display: flex;
 }
 
-#menu-bar {
-    padding-bottom: 6%;
-    padding-right: 10%;
-    padding-left: 10%;
-    height: 200px;
-    list-style-type: none;
-    margin: 0;
-    overflow: hidden;
-    display: block;
-    width: 500px;
-}
 
 img {
     max-width:100%;
@@ -167,4 +156,11 @@ li {
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: rgb(199, 175, 134); 
+  }
+
+/* On screens that are 600px wide or less, the background color is olive */
+@media screen and (max-width: 850px) {
+    .topnav-right {
+      display: none;
+    }
   }
