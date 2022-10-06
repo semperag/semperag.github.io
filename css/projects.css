@@ -40,7 +40,6 @@ main {
     position: absolute;
     font-size: 20pt;
     color: white;
-    line-height: 503px;
     
     transition-property: border-radius;
     transition-duration: 0.35s;

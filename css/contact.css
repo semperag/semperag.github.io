@@ -32,7 +32,6 @@ tbody tr td {
     color: white;
     padding-left: 20px;
     height: 30px;
-    width: 680px;
     font-size: 1.5em;
     vertical-align: center;
 }
@@ -42,7 +41,6 @@ tbody tr td {
     color: white;
     padding-left: 20px;
     height: 30px;
-    width: 680px;
     font-size: 1.5em;
     vertical-align: center;
 }
@@ -52,7 +50,6 @@ tbody tr td {
     color: white;
     padding-left: 20px;
     height: 400px;
-    width: 680px;
     font-size: 1.5em;
     vertical-align: center;
 }
@@ -80,4 +77,9 @@ tbody tr td {
     color: black;
     background-color: white;
     transition-delay: 0s;
+}
+
+textarea {
+    width: 80vw;
+    max-width: 680px;
 }
