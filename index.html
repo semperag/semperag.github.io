@@ -60,20 +60,7 @@
             });
 
             });
-            /*
-            menu.addEventListener("click",function(){
-/*
-                if (menuClicked) {
-                    document.getElementById("topnav-right").style.display = "none";
-                } else {
-                    document.getElementById("topnav-right").style.display = "flex";
-                }
-
-                menuClicked = !menuClicked;
-                
-               console.log("clicking");
-                document.getElementById("topnav-right").classList.toggle('active');
-            */
+            
             $(window).resize(function(){
             if(window.innerWidth < 851){
                 $.get("https://semperag.github.io/nav.html", function(data){
