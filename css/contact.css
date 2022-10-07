@@ -9,14 +9,16 @@ main {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    padding-top: 50px;
 }
 
 .resume-title {
     margin-left: auto;
     margin-right: auto;
     font-size: 2.75em;
-    padding-bottom: 20px;
+    padding-bottom: 5%;
     width: 680px;
+    font-weight: normal;
 }
 
 tbody tr td {
@@ -25,33 +27,6 @@ tbody tr td {
 
 ::placeholder {
     color: rgb(203, 203, 203);
-}
-
-#name-textarea {
-    background-color: rgb(57, 57, 57);
-    color: white;
-    padding-left: 20px;
-    height: 30px;
-    font-size: 1.5em;
-    vertical-align: center;
-}
-
-#email-textarea {
-    background-color: rgb(57, 57, 57);
-    color: white;
-    padding-left: 20px;
-    height: 30px;
-    font-size: 1.5em;
-    vertical-align: center;
-}
-
-#message-textarea {
-    background-color: rgb(57, 57, 57);
-    color: white;
-    padding-left: 20px;
-    height: 400px;
-    font-size: 1.5em;
-    vertical-align: center;
 }
 
 #send {
@@ -80,6 +55,96 @@ tbody tr td {
 }
 
 textarea {
+    height: 30px;
+    background-color: rgb(57, 57, 57);
+    color: white;
+    padding-left: 20px;
     width: 80vw;
     max-width: 680px;
+    font-size: 1.5em;
+    vertical-align: center;
+}
+
+#message-textarea {
+    height: 400px;
+}
+
+@media screen and (max-width: 680px) {
+    textarea {
+        padding-left: 14px;
+        font-size: 1.35em;
+        height: 26px;
+    }
+    
+    #message-textarea {
+        height: 350px;
+    }
+
+    .resume-title {
+        font-size: 2.25em;
+    }
+    
+    #send {
+        padding-top: 30px;
+    }
+    
+    #send-button {
+        width: 120px;
+        height: 60px;
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    textarea {
+        padding-left: 14px;
+        font-size: 1.2em;
+        height: 23px;
+    }
+    
+    #message-textarea {
+        height: 350px;
+    }
+
+    .resume-title {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    textarea {
+        padding-left: 14px;
+        font-size: 1em;
+        height: 20px;
+    }
+    
+    #message-textarea {
+        height: 350px;
+    }
+
+    .resume-title {
+        font-size: 1.85em;
+    }
+
+    #send {
+        padding-top: 20px;
+    }
+    
+    #send-button {
+        width: 100px;
+        height: 50px;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    textarea {
+        padding-left: 11.5px;
+        font-size: .85em;
+        height: 15px;
+    }
+    
+    #message-textarea {
+        height: 350px;
+    }
 }
