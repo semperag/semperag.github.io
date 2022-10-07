@@ -192,9 +192,13 @@ li {
         width: 100%;
     }
 
-    #topnav-right a{
+    #topnav-right a {
         border-top: 1px solid white;
         justify-content: center;
+    }
+
+    #contact-link {
+        border-bottom: 1px solid white;
     }
 
     #menu {
