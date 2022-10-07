@@ -1,46 +1,108 @@
 main {
     display: flex;
+    flex-grow: 1;
+    flex-direction: row;
     position: relative;
-    flex-grow: 1;
 }
 
-.position {
-    margin-bottom: 0.75em;
-    height: 15px;
-    width: 15px;
-    background-color: white;
-    border-radius: 50%;
-    display: inline-block;
-    justify-content: center;
-    align-content: center;
-    z-index: 1;
+.card {
+    background-color: rgb(29, 29, 31);
+    border-radius: 10px;
+    height: 100px;
+    position: relative;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6%;
+
+    transition-property: background;
+    transition-duration: 0.35s;
 }
 
-.current-page {
-    background-color: rgb(197, 117, 12);
-}
-
-.last-position {
-    flex-grow: 1;
-}
-
-.credits {
-    display: none;
-    height: 30px;
-    width: 30px;
-    background-color: rgb(209, 143, 56);
-    border-radius: 10%;
-    text-align: center;
+#view-projects {
+    background-color: rgb(29, 29, 31);
+    border-radius: inherit;
+    inset: 1px;
+    position: absolute;
+    font-size: 20pt;
     color: white;
-    font-size: 1.5em;
-    transform: rotate(-90deg);
+
+    transition-property: color;
+    transition-duration: 0.35s;
 }
 
-.credits:hover {
+#view-projects:hover {
     cursor: pointer;
-    background-color: rgb(240, 188, 120);;
+    color: rgb(208, 207, 140);
+    transition-duration: 0.35s;
 }
 
-a {
-    text-decoration: none;
+.card:hover::before {
+    opacity: 1;
+    transition-duration: 0.35s;
+}
+
+.card:before {
+    background: linear-gradient(
+        45deg,
+        transparent 5%,
+        rgb(208, 207, 140) 50%,
+        transparent 99%
+    );
+    transition-duration: 0.35s;
+    border-radius: inherit;
+    content: "";
+    inset: 0px;
+    opacity: 0;
+    position: absolute;
+    z-index: 0;
+}
+
+#projects-link {
+    border-radius: inherit;
+}
+
+#name {
+    margin: 0;
+    margin-top: 2.5em;
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+#profession {
+    margin: 0;
+    margin-top: 0.35em;
+    font-size: 1.6em;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    #name {
+        margin-top: 2.5em;
+        font-size: 2.25em;
+        font-weight: bold;
+    }
+    
+    #profession {
+        margin-top: 0.35em;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    .card {
+        height: 75px;
+        width: 187.5px;
+        margin-top: 6%;
+        background-color: rgb(29, 29, 31);
+        border-radius: 5px;
+    
+    }
+    #view-projects {
+        inset: .75px;
+        font-size: 15pt;
+    }
 }
