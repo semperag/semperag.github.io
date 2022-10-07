@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    width: 100vw;
     height: 100vh;
     background-repeat:no-repeat;
     background-attachment: fixed;
@@ -190,19 +191,12 @@ li {
         flex-direction: column;
         padding: 0;
         width: 100%;
+        border-bottom: 1px solid white;
     }
 
     #topnav-right a {
         border-top: 1px solid white;
         justify-content: center;
-    }
-
-    #contact-link {
-        border-bottom: 1px solid white;
-    }
-
-    #contact-link .active {
-        border-bottom: 3px solid rgb(208, 207, 140);
     }
 
     #menu {
@@ -225,10 +219,14 @@ li {
     .active {
         display: flex !important;
     }
-  }
 
-  @media screen and (max-width: 450px) {
+    #preloader {
+        background: #000 url(preloaderSmall.gif) no-repeat center center;
+    }
+}
+
+@media screen and (max-width: 450px) {
     #social-title {
         display: none;
     }
-  }
+}
