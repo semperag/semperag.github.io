@@ -201,6 +201,10 @@ li {
         border-bottom: 1px solid white;
     }
 
+    #contact-link .active {
+        border-bottom: 3px solid rgb(208, 207, 140);
+    }
+
     #menu {
         display: flex;
         position: absolute;
