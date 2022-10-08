@@ -93,6 +93,7 @@ main {
         font-size: 1.2em;
         font-weight: bold;
     }
+
     .card {
         height: 75px;
         width: 187.5px;
@@ -101,8 +102,36 @@ main {
         border-radius: 5px;
     
     }
+
     #view-projects {
         inset: .75px;
         font-size: 15pt;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #name {
+        margin-top: 3.5em;
+        font-size: 1.25em;
+        font-weight: bold;
+    }
+    
+    #profession {
+        margin-top: 0.35em;
+        font-size: .75em;
+        font-weight: bold;
+    }
+
+    .card {
+        height: 45px;
+        width: 110px;
+        margin-top: 6%;
+        border-radius: 5px;
+    
+    }
+
+    #view-projects {
+        inset: .75px;
+        font-size: 8pt;
     }
 }
