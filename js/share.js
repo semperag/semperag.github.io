@@ -1,9 +1,22 @@
+var loader = document.getElementById("preloader");
+            window.addEventListener("load", function() {
+                console.log(loader);
+                setTimeout(() => {  loader.style.display = "none"; }, 500);
+                
+            });
 
-/*
- * This code gets the elements for our navigation bar through the 
- * provided link. We use this navigation bar for each webpage and
- * do not have to repeat code yay! :)
-*/
-$.get("https://semperag.github.io/nav.html", function(data){
-    $("#nav-placeholder").replaceWith(data);
-});
+            $.get("https://semperag.github.io/nav.html", function(data){
+            $("#menu").on('click',function(){
+                document.getElementById("topnav-right").classList.toggle('active');
+            });
+
+            });
+            
+            $(window).resize(function(){
+
+                if(window.innerWidth < 851) {
+                    $.get("https://semperag.github.io/nav.html", function(data){
+                    $("#topnav-right").removeClass('active');
+                    });
+                }
+            });
