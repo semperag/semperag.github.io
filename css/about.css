@@ -47,3 +47,37 @@ img {
         font-size: 2em;
     }
 }
+
+@media screen and (max-width: 290px) {
+    .resume-title {
+        padding-bottom: 150px;
+    }
+}
+
+@media screen and (max-width: 240px) {
+    .resume-title {
+        padding-bottom: 200px;
+    }
+}
+
+@media screen and (max-width: 225px) {
+    .resume-title {
+        padding-bottom: 330px;
+    }
+}
+
+@media screen and (max-width: 202px) {
+    .resume-title {
+        padding: 0em 0.35em;
+        padding-top: 50px;
+        padding-bottom: 450px;
+    }
+}
+
+@media screen and (max-width: 164px) {
+    .resume-title {
+        padding: 0em 0.35em;
+        padding-top: 50px;
+        padding-bottom: 600px;
+    }
+}
