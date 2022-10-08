@@ -1,4 +1,6 @@
-var loader = document.getElementById("preloader");
+
+            var loader = document.getElementById("preloader");
+            console.log(loader);
             window.addEventListener("load", function() {
                 console.log(loader);
                 setTimeout(() => {  loader.style.display = "none"; }, 500);
