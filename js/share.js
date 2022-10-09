@@ -1,6 +1,11 @@
 
             var loader = document.getElementById("preloader");
-            console.log(loader);
+            
+            /*
+            if(window.innerWidth < 851) {
+                    preloader.src = "css/preloaderSmall.mp4";
+            }*/
+
             window.addEventListener("load", function() {
                 console.log(loader);
                 setTimeout(() => {  loader.style.display = "none"; }, 500);
