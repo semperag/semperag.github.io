@@ -5,12 +5,20 @@ main {
     position: relative;
 }
 
+
 .about-title {
     margin-left: auto;
     margin-right: auto;
     font-size: 2.75em;
-    padding: 0em 0.75em;
     padding-top: 50px;
+    max-width: 680px;
+    padding-bottom: 50px;
+    width: 80%;
+}
+
+.card {
+    text-align: start;
+    font-size: 25px;
 }
 
 img {
@@ -29,38 +37,21 @@ img {
     .about-title {
         font-size: 2em;
     }
+
+    .card {
+        font-size: 23px;
+    }
 }
 
 @media screen and (max-width: 290px) {
-    .about-title {
-        padding-bottom: 150px;
-    }
-}
-
-@media screen and (max-width: 240px) {
-    .about-title {
-        padding-bottom: 200px;
-    }
-}
-
-@media screen and (max-width: 225px) {
-    .about-title {
-        padding-bottom: 330px;
-    }
-}
-
-@media screen and (max-width: 202px) {
-    .about-title {
-        padding: 0em 0.35em;
-        padding-top: 50px;
-        padding-bottom: 450px;
+    .card {
+        font-size: 20px;
     }
 }
 
 @media screen and (max-width: 164px) {
-    .about-title {
-        padding: 0em 0.35em;
-        padding-top: 50px;
-        padding-bottom: 600px;
+
+    .card {
+        font-size: 18px;
     }
 }

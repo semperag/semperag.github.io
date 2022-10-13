@@ -147,4 +147,8 @@ textarea {
     #message-textarea {
         height: 350px;
     }
+
+    textarea {
+        width: 75vw;
+    }
 }

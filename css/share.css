@@ -249,6 +249,10 @@ li {
         transition-duration: 0.3s;
         pointer-events:none;
     }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+      }
 }
 
 @media screen and (max-width: 210px) {
