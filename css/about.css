@@ -5,29 +5,12 @@ main {
     position: relative;
 }
 
-.resume-title {
+.about-title {
     margin-left: auto;
     margin-right: auto;
     font-size: 2.75em;
     padding: 0em 0.75em;
     padding-top: 50px;
-}
-
-.project-title:hover {
-    color: rgb(208, 207, 140);
-}
-
-.card {
-    text-align: start;
-    height: 100vh;
-    max-width: 700px;
-    margin-top: 5%;
-    font-size: large;
-    font-family: lato;
-}
-
-.card i {
-    padding-left: 25px;
 }
 
 img {
