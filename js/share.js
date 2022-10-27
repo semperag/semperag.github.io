@@ -1,10 +1,5 @@
 
             var loader = document.getElementById("preloader");
-            
-            /*
-            if(window.innerWidth < 851) {
-                    preloader.src = "css/preloaderSmall.mp4";
-            }*/
 
             window.addEventListener("load", function() {
                 console.log(loader);
