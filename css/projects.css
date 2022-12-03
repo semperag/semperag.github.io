@@ -70,6 +70,10 @@ main {
     z-index: 0;
 }
 
+.card a {
+    height: fit-content;
+}
+
 #name {
     margin: 0;
     margin-top: 0.5em;
@@ -87,4 +91,9 @@ main {
     display: inline-block;
     font-weight: bold;
     text-align: center;
+}
+
+img {
+    min-height: 440px;
+    height: inherit;
 }
