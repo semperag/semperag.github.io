@@ -3,12 +3,14 @@ main {
     flex-grow: 1;
     flex-direction: row;
     position: relative;
+    height: 100vh;
 }
 
 .card {
     background-color: rgb(29, 29, 31);
     border-radius: 10px;
     height: 100px;
+    min-height: 100px;
     position: relative;
     width: 250px;
     margin-left: auto;
@@ -96,6 +98,7 @@ main {
 
     .card {
         height: 75px;
+        min-height: 75px;
         width: 187.5px;
         margin-top: 6%;
         background-color: rgb(29, 29, 31);
@@ -124,6 +127,7 @@ main {
 
     .card {
         height: 45px;
+        min-height: 45px;
         width: 110px;
         margin-top: 6%;
         border-radius: 5px;
