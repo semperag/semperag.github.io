@@ -1,12 +1,6 @@
 
             var loader = document.getElementById("preloader");
 
-            window.addEventListener("load", function() {
-                console.log(loader);
-                setTimeout(() => {  loader.style.display = "none"; }, 500);
-                
-            });
-
             Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
                 get: function () {
                     return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
@@ -23,6 +17,12 @@
                     // so play video now
                     videoElement.play();
                 }
+            });
+
+            window.addEventListener("load", function() {
+                console.log(loader);
+                setTimeout(() => {  loader.style.display = "none"; }, 500);
+                
             });
 
             $.get("https://semperag.github.io/nav.html", function(data){
