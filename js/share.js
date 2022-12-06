@@ -1,10 +1,5 @@
 
-            var loader = document.getElementById("preloader");
-
-            Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
-                get: function () {
-                    return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
-                
+            var loader = document.getElementById("preloader");   
 
             window.addEventListener("load", function() {
                 console.log(loader);
