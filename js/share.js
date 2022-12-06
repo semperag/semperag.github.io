@@ -11,10 +11,6 @@
                 const videoElement = document.getElementById('preloader');
                 if (videoElement.playing) {
                     // video is already playing so do nothing
-                }
-                else {
-                    // video is not playing
-                    // so play video now
                  
 
             window.addEventListener("load", function() {
