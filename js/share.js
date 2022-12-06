@@ -9,9 +9,7 @@
 
             $('body').on('click touchstart', function () {
                 const videoElement = document.getElementById('preloader');
-                if (videoElement.playing) {
-                    // video is already playing so do nothing
-                 
+               
 
             window.addEventListener("load", function() {
                 console.log(loader);
