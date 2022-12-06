@@ -7,9 +7,7 @@
                 }
             });
 
-            $('body').on('click touchstart', function () {
-                const videoElement = document.getElementById('preloader');
-               
+            
 
             window.addEventListener("load", function() {
                 console.log(loader);
