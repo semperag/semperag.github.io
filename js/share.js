@@ -15,9 +15,7 @@
                 else {
                     // video is not playing
                     // so play video now
-                    videoElement.play();
-                }
-            });
+                 
 
             window.addEventListener("load", function() {
                 console.log(loader);
