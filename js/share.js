@@ -4,7 +4,6 @@
             window.addEventListener("load", function() {
                 console.log(loader);
                 setTimeout(() => {  loader.style.display = "none"; }, 500);
-                /
             });
 
             $.get("https://semperag.github.io/nav.html", function(data){
