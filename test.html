@@ -52,5 +52,12 @@
             document.getElementById('test').textContent = "This is mobile";
         }
 
+        console.log(detectMob);
+
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        if (isMobile) {
+            document.getElementById('test').textContent = "This is mobile";
+        }
+
     </script>
 </html>
