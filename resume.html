@@ -14,8 +14,10 @@
         
     </head>
     <script>
-$.get("https://semperag.github.io/nav.html", function(data){
-            $("#resume-link").addClass("active");
+        window.addEventListener("load", function() {
+            $.get("https://semperag.github.io/nav.html", function(data){
+                $("#resume-link").addClass("active");
+            });
         });
     </script>
     <body>
