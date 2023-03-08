@@ -1,4 +1,3 @@
-
 /*
  * This code gets the elements for our navigation bar through the 
  * provided link. We use this navigation bar for each webpage and
